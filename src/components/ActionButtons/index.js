@@ -9,7 +9,7 @@ function ActionButtons({ questionsLength, step }) {
         <button
           onClick={() => {
             // eslint-disable-next-line no-template-curly-in-string
-            navigate('${step - 1}');
+            navigate(`${step - 1}`);
           }}
         >
           이전
@@ -27,7 +27,7 @@ function ActionButtons({ questionsLength, step }) {
         <button
           onClick={() => {
             // eslint-disable-next-line no-template-curly-in-string
-            navigate('${step + 1}');
+            navigate(`${step + 1}`);
           }}
         >
           다음
