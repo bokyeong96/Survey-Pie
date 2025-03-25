@@ -52,7 +52,7 @@ const ItemWrapper = styled.div`
 
   input[type='checkbox'] ~ span {
     width: 24px;
-    heigth: 24px;
+    height: 24px;
     border: 3px solid #e2dfdf;
     box-sizing: border-box;
     display: inline-block;
