@@ -1,5 +1,5 @@
 function Progressindicator() {
-  return <>P</>;
+  return <></>;
 }
 
 export default Progressindicator;

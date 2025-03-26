@@ -17,7 +17,6 @@ const Button = styled.button`
   border-radius: 4px;
   border: none;
   font-weight: bold;
-
   border: ${({ type }) =>
     type === 'TERIARY' ? `1px solid ${TERIARY.BUTTON.DEFAULT.BORDER}` : 'none'};
 

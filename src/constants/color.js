@@ -1,11 +1,11 @@
 export const PRIMARY = {
   BUTTON: {
     DEFAULT: {
-      COLOR: '#FFFFF',
+      COLOR: '#FFFFFF',
       BACKGROUND: '#6542F1',
     },
     HOVER: {
-      COLOR: '#FFFFF',
+      COLOR: '#FFFFFF',
       BACKGROUND: '#9982F4',
     },
     PRESSED: {
