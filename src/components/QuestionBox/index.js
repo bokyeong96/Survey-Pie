@@ -1,11 +1,16 @@
 import styled from 'styled-components';
 
+import useCurrentAnswer from '../../hooks/useCurrentAnswer';
+import useCurrentQuestion from '../../stores/questions/atom';
 import ActionButtons from '../ActionButtons';
 import Body from '../Body';
 import Desc from '../Desc';
 import Title from '../Title';
 
-function QusetionBox({ question, questionsLength, step, answer, setAnswer }) {
+function QusetionBox() {
+  const [answer, setAnswer] = useCurrentAnswer();
+  const question = useCurrentQuestion();
+
   return (
     <QusetionBoxWrapper>
       <Title> {question.title} </Title>
@@ -16,11 +21,10 @@ function QusetionBox({ question, questionsLength, step, answer, setAnswer }) {
         setAnswer={setAnswer}
         options={question.options}
       />
-      <ActionButtons questionsLength={questionsLength} step={step} />
+      <ActionButtons />
     </QusetionBoxWrapper>
   );
 }
-
 const QusetionBoxWrapper = styled.div`
   display: flex;
   flex-direction: column;
