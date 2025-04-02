@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 import useCurrentAnswer from '../../hooks/useCurrentAnswer';
-import useCurrentQuestion from '../../stores/questions/atom';
+import useCurrentQuestion from '../../hooks/useCurrentQuestion';
 import ActionButtons from '../ActionButtons';
 import Body from '../Body';
 import Desc from '../Desc';
@@ -9,7 +9,7 @@ import Title from '../Title';
 
 function QusetionBox() {
   const [answer, setAnswer] = useCurrentAnswer();
-  const question = useCurrentQuestion();
+  const question = useCurrentQuestion(); //undefined
 
   return (
     <QusetionBoxWrapper>
