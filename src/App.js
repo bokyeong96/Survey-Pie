@@ -10,8 +10,10 @@ function App() {
       <AppWrapper>
         <Box>
           <Routes>
-            <Route path="/done" element={<CompletionPage />} />
-            <Route path="/survey/:surveyId/:step" element={<SurveyPage />} />
+            <Route path="/done/:surveyId" element={<CompletionPage />} />
+            <Route path="/survey/:surveyId" element={<SurveyPage />}>
+              <Route path=":step" element={<SurveyPage />} />
+            </Route>
           </Routes>
         </Box>
       </AppWrapper>
