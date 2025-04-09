@@ -26,7 +26,7 @@ const AppWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #e5e5e5;
+  background-color: #f5f5f5;
 `;
 
 const Box = styled.div`
@@ -38,6 +38,7 @@ const Box = styled.div`
   padding: 60px;
   display: flex;
   box-sizing: border-box;
+  position: relative;
 `;
 
 export default App;
